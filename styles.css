@@ -1,0 +1,12 @@
+body {
+    background: grey;
+}
+
+p {
+    background: honeydew;
+}
+
+h2 {
+    font-size: 300%;
+    font-family: sans-serif;
+}
