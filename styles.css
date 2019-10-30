@@ -4,9 +4,22 @@ body {
 
 p {
     background: honeydew;
+    position: fixed;
+    top: 50px;
+    left: 300px;
+
+    
 }
 
 h2 {
     font-size: 300%;
     font-family: sans-serif;
+}
+
+ol {
+    background: honeydew;
+   width: 300px;
+   position: fixed;
+   left: 600px;
+   top: 425px;
 }

@@ -58,3 +58,63 @@ if(q5 === 'yes' || q5 === 'y') {
 
 } else {alert('Wow you got that wrong?');
 }
+
+var favoriteNumber = '7';
+var numberGuessCount = 4;
+var correctGuessFlagNumber = false;
+var theirGuessAtNumber;
+
+theirGuessAtNumber = prompt('Guess my number!');
+while(numberGuessCount > 0 && correctGuessFlagNumber === false){
+
+
+  if(theirGuessAtNumber > '7') {
+    theirGuessAtNumber = prompt('That is to high!');
+
+
+  } else if(theirGuessAtNumber < '7') {
+    theirGuessAtNumber = prompt('thats too low');
+  } else { alert('you got it');}
+
+
+  numberGuessCount--;
+  for(var i = 0; i < 3; i++){
+    if(favoriteNumber[i] === theirGuessAtNumber){
+      correctGuessFlagNumber = true;
+    }
+  }
+
+
+}
+
+alert('All done.');
+
+
+//Drink question 7
+alert('What\'s my favorite drink?');
+var favoriteDrinks = ['Monster', 'RedBull', 'Rockstar'];
+var guessCount = 6;
+var correctGuessFlag = false;
+var theirGuessAtDrink;
+
+
+while(guessCount > 0 && correctGuessFlag === false){
+  theirGuessAtDrink = prompt('What\'s my favorite drink?');
+
+
+  guessCount--;
+  for(var b = 0; b < 3; b++){
+    if(favoriteDrinks[b] === theirGuessAtDrink){
+      correctGuessFlag = true;
+    }
+  }
+
+
+}
+
+
+
+var done = alert('Your all done here are the answers. \n Question 1 - Yes | ' + q1 + '\n Question 2 - No | ' +q2 + '\n Question 3 - Yes | ' + q3 +'\n Question 4 - Yes | ' + q4 + '\n Question 5 - Yes | ' + q5 + '\n Question 6 - 7 | ' + theirGuessAtNumber + '\n Question 7 - Monster, redbull, and Rockstar | ' + theirGuessAtDrink);
+alert('That\'s the end!');
+
+
